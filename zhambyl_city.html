@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#183b34">
+	<meta name="description" content="Путеводитель по Жамбылской области: исторические места, природа, развлечения, рынки и идеи для путешествий.">
+	<title>Жамбылская область — путешествие начинается здесь</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+	<style>
+		:root{--ink:#19332e;--muted:#6d7b73;--cream:#f7f5ef;--green:#214d3d;--lime:#d8e58b;--line:#e6e5dc;--white:#fff}
+		*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,calc(100% - 48px));margin:auto}
+		.topbar{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:11px;font-weight:700;letter-spacing:-.4px}.brand-mark{width:38px;height:38px;border-radius:13px;background:var(--green);display:grid;place-items:center;color:var(--lime);font-size:20px}.nav{display:flex;align-items:center;gap:31px;color:#42554e;font-size:14px}.nav a:hover{color:#a46b39}.nav-cta{padding:11px 17px;border-radius:30px;background:var(--green);color:white!important}
+		.hero{position:relative;min-height:570px;border-radius:26px;overflow:hidden;background:linear-gradient(90deg,rgba(14,35,29,.82),rgba(14,35,29,.12)),url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Taraz_image1.jpg') center 53%/cover;color:#fff;display:flex;align-items:center}.hero-content{max-width:660px;padding:70px 8%}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);font-size:12px;font-weight:700;letter-spacing:1.8px;text-transform:uppercase}.eyebrow:before{content:'';width:25px;height:1px;background:currentColor}h1,h2,h3,p{margin-top:0}h1,h2,.place-title{font-family:'Playfair Display',serif}h1{font-size:clamp(46px,7vw,80px);line-height:1.04;letter-spacing:-2px;margin:20px 0}.hero p{max-width:490px;color:#e3e8e2;line-height:1.75;font-size:16px}.button{display:inline-flex;align-items:center;gap:10px;margin-top:18px;padding:14px 20px;border-radius:30px;background:var(--lime);color:var(--ink);font-weight:700;font-size:14px}.button span{font-size:18px}.hero-note{position:absolute;right:35px;bottom:30px;color:#fff;font-size:12px;background:#10231f75;padding:10px 14px;border-radius:30px;backdrop-filter:blur(8px)}
+		.intro{padding:75px 0 34px;display:grid;grid-template-columns:1fr 1.1fr;gap:65px;align-items:end}.intro h2,.section-heading h2{font-size:clamp(32px,4vw,47px);line-height:1.12;letter-spacing:-1px;margin:12px 0 0}.intro-copy{color:var(--muted);line-height:1.8;max-width:530px;font-size:15px;margin-bottom:4px}.kicker{color:#9a7541;text-transform:uppercase;letter-spacing:1.7px;font-size:11px;font-weight:700}
+		.explore{padding:36px 0 74px}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:26px}.section-heading p{color:var(--muted);margin:0 0 4px;font-size:14px}.tabs{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:18px}.tab{border:1px solid var(--line);background:transparent;color:#53645c;border-radius:24px;padding:10px 16px;font:600 13px 'DM Sans',sans-serif;cursor:pointer;transition:.2s}.tab:hover,.tab.active{background:var(--green);border-color:var(--green);color:#fff}.category-panel{min-height:210px}.activity-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.activity-card{background:#fff;border:1px solid #eeede6;border-radius:17px;padding:20px;min-height:174px;display:flex;flex-direction:column;box-shadow:0 8px 30px #213b2d08}.activity-icon{width:38px;height:38px;border-radius:12px;background:#edf1e4;display:grid;place-items:center;margin-bottom:18px;font-size:17px}.activity-card h3{font-size:17px;margin:0 0 8px}.activity-card p{color:var(--muted);font-size:13px;line-height:1.6;margin:0 0 14px}.activity-card a{margin-top:auto;color:#a46b39;font-size:12px;font-weight:700}
+		.places{padding:62px 0 85px;background:#eef0e8}.places .section-heading{margin-bottom:31px}.places .section-heading p{max-width:390px;line-height:1.65}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:19px}.card{background:#fff;border-radius:17px;overflow:hidden;transition:transform .25s,box-shadow .25s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #18352b16}.card-image{height:218px;background-size:cover;background-position:center;position:relative}.tag{position:absolute;left:14px;top:14px;padding:7px 10px;border-radius:20px;background:#ffffffec;font-size:10px;font-weight:700;letter-spacing:.4px;text-transform:uppercase;color:#335541}.card-body{padding:19px 19px 21px}.place-title{font-size:21px;margin:0 0 8px}.card-body p{font-size:13px;line-height:1.65;color:var(--muted);margin:0}.card-meta{display:flex;align-items:center;justify-content:space-between;border-top:1px solid #eeeee8;margin-top:16px;padding-top:13px;font-size:11px;color:#66766d}.card-meta span:first-child:before{content:'⌖';margin-right:5px;color:#a47742;font-size:14px}.mini-link{color:var(--green);font-weight:700}
+		.tip{margin:65px auto 80px;background:var(--green);border-radius:20px;padding:36px 42px;color:white;display:flex;justify-content:space-between;gap:30px;align-items:center}.tip h2{font:600 27px 'Playfair Display',serif;margin:0 0 8px}.tip p{margin:0;color:#d4dfd8;font-size:13px;line-height:1.65;max-width:650px}.tip-icon{font-size:36px;color:var(--lime)}footer{border-top:1px solid var(--line);padding:24px 0 30px;color:#78837d;font-size:12px;display:flex;justify-content:space-between;gap:20px}.footer-brand{font-weight:700;color:var(--ink)}
+		@media(max-width:760px){.wrap{width:min(100% - 32px,560px)}.topbar{height:68px}.nav{gap:15px}.nav a:not(.nav-cta){display:none}.hero{min-height:520px;border-radius:19px;background-position:60% center}.hero-content{padding:48px 27px}.hero-note{right:15px;bottom:14px}.intro{grid-template-columns:1fr;gap:18px;padding:55px 0 22px}.section-heading{align-items:start;gap:15px;flex-direction:column}.activity-grid{grid-template-columns:1fr 1fr}.category-panel{padding:0}.grid{grid-template-columns:1fr 1fr}.card-image{height:180px}.tip{padding:28px;align-items:flex-start}.tip-icon{font-size:28px}}
+		@media(max-width:480px){.brand{font-size:14px}.nav-cta{padding:10px 13px;font-size:12px}.hero{min-height:490px}h1{font-size:49px}.activity-grid,.grid{grid-template-columns:1fr}.card-image{height:220px}.places{padding:49px 0 60px}.tip{margin:46px auto 58px}.tip-icon{display:none}footer{flex-direction:column}}
+	</style>
+</head>
+<body>
+	<header class="wrap topbar">
+		<a class="brand" href="#home" aria-label="На главную"><span class="brand-mark">Ж</span><span>Жамбылская область</span></a>
+		<nav class="nav" aria-label="Главная навигация"><a href="#guide">Чем заняться</a><a href="#guide" data-open-category="tours">Туры</a><a href="#places">Красивые места</a><a class="nav-cta" href="#guide" data-open-category="tours">Выбрать тур&nbsp; ↗</a></nav>
+	</header>
+
+	<main>
+		<section class="wrap hero" id="home">
+			<div class="hero-content"><span class="eyebrow">Юг Казахстана · путешествия</span><h1>Откройте<br>Жамбыл</h1><p>Земля древних городов, бескрайних степей и горных пейзажей. Соберите своё путешествие — от прогулки по Таразу до поездки к старинным мавзолеям.</p><a class="button" href="#guide">Исследовать область <span>↓</span></a></div>
+			<div class="hero-note">Тараз и окрестности · путеводитель</div>
+		</section>
+
+		<section class="wrap intro"><div><span class="kicker">Место, где встречаются эпохи</span><h2>Путешествие с<br>историей и характером</h2></div><p class="intro-copy">Жамбылская область приглашает замедлиться и посмотреть вокруг: пройтись по улицам Тараза, заглянуть на местный рынок, а затем отправиться к памятникам Великого шёлкового пути и природным уголкам региона.</p></section>
+
+		<section class="wrap explore" id="guide">
+			<div class="section-heading"><div><span class="kicker">Ваш маршрут</span><h2>Чем заняться</h2></div><p>Выберите интерес — и найдите идею для своего дня.</p></div>
+			<div class="tabs" role="tablist" aria-label="Категории отдыха">
+				<button class="tab active" role="tab" aria-selected="true" data-category="fun">Развлечения</button>
+				<button class="tab" role="tab" aria-selected="false" data-category="markets">Базары и покупки</button>
+				<button class="tab" role="tab" aria-selected="false" data-category="history">История и культура</button>
+				<button class="tab" role="tab" aria-selected="false" data-category="nature">Природа и прогулки</button>
+				<button class="tab" role="tab" aria-selected="false" data-category="food">Вкус области</button>
+				<button class="tab" role="tab" aria-selected="false" data-category="tours">Туры</button>
+			</div>
+			<div class="category-panel" id="category-panel" role="tabpanel" aria-live="polite"></div>
+		</section>
+
+		<section class="places" id="places"><div class="wrap">
+			<div class="section-heading"><div><span class="kicker">За пределами города</span><h2>Красивые места области</h2></div><p>Исторические памятники и природные ландшафты, которые стоит добавить в маршрут.</p></div>
+			<div class="grid">
+				<article class="card"><div class="card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Aisha_Bibi_mausoleum_front_01.jpg')"><span class="tag">Архитектура</span></div><div class="card-body"><h3 class="place-title">Мавзолей Айша-Биби</h3><p>Знаменитый памятник средневекового зодчества неподалёку от Тараза, известный тонкой резьбой по терракоте.</p><div class="card-meta"><span>Окрестности Тараза</span><a class="mini-link" href="https://maps.google.com/?q=Мавзолей+Айша-Биби" target="_blank" rel="noopener">На карте ↗</a></div></div></article>
+				<article class="card"><div class="card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Akyrtas_05-2020.jpg')"><span class="tag">История</span></div><div class="card-body"><h3 class="place-title">Древнее городище Акыртас</h3><p>Таинственный архитектурный комплекс из массивных каменных блоков и одно из самых необычных мест региона.</p><div class="card-meta"><span>Район Тараза</span><a class="mini-link" href="https://maps.google.com/?q=Городище+Акыртас" target="_blank" rel="noopener">На карте ↗</a></div></div></article>
+				<article class="card"><div class="card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Karatau_mountains.jpg')"><span class="tag">Горы</span></div><div class="card-body"><h3 class="place-title">Ущелья и горы Каратау</h3><p>Суровые склоны, просторные долины и красивые виды для тех, кто хочет увидеть степной характер края.</p><div class="card-meta"><span>Запад области</span><a class="mini-link" href="https://maps.google.com/?q=Каратау+Жамбылская+область" target="_blank" rel="noopener">На карте ↗</a></div></div></article>
+				<article class="card"><div class="card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Жамбыльская_область,_Аспара.jpg')"><span class="tag">Природа</span></div><div class="card-body"><h3 class="place-title">Район Мерке и Аспара</h3><p>Горная местность в Жамбылской области с панорамами и природными маршрутами в окрестностях Мерке.</p><div class="card-meta"><span>Меркенский район</span><a class="mini-link" href="https://maps.google.com/?q=Мерке+Жамбылская+область" target="_blank" rel="noopener">На карте ↗</a></div></div></article>
+				<article class="card"><div class="card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Mausoleum_of_Babaji_Khatun.jpg')"><span class="tag">Памятник</span></div><div class="card-body"><h3 class="place-title">Мавзолей Бабаджи-хатун</h3><p>Компактный средневековый мавзолей рядом с Айша-Биби — удобно посетить оба памятника за одну поездку.</p><div class="card-meta"><span>Окрестности Тараза</span><a class="mini-link" href="https://maps.google.com/?q=Мавзолей+Бабаджи-хатун" target="_blank" rel="noopener">На карте ↗</a></div></div></article>
+				<article class="card"><div class="card-image" style="background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Tekturmas_(5550974832).jpg')"><span class="tag">Панорама</span></div><div class="card-body"><h3 class="place-title">Комплекс Тектурмас</h3><p>Историко-архитектурный комплекс на возвышенности с видом на Тараз и долину реки Талас.</p><div class="card-meta"><span>Тараз</span><a class="mini-link" href="https://maps.google.com/?q=Тектурмас+Тараз" target="_blank" rel="noopener">На карте ↗</a></div></div></article>
+			</div>
+		</div></section>
+
+		<aside class="wrap tip"><div><h2>Небольшой совет путешественнику</h2><p>Уточняйте график работы достопримечательностей, сезонные условия и транспорт перед выездом. Для поездок за город заранее продумайте маршрут и запас воды.</p></div><div class="tip-icon" aria-hidden="true">✳</div></aside>
+	</main>
+	<footer class="wrap"><span class="footer-brand">Жамбылская область · путеводитель</span><span>Идеи для путешествий по югу Казахстана</span></footer>
+	<script>
+		const categories={
+			fun:{title:'Активный отдых',text:'Выберите формат досуга в Таразе или отправьтесь за город для прогулок на свежем воздухе.',items:[
+				{icon:'◉',name:'Боулинг и игровые зоны',text:'Найдите современные развлекательные центры и семейные игровые зоны.',query:'Боулинг Тараз'},
+				{icon:'▶',name:'Кинотеатры Тараза',text:'Посмотрите афишу и удобное время сеанса перед поездкой.',query:'Кинотеатр Тараз'},
+				{icon:'⌖',name:'Городские парки',text:'Прогулки по паркам и центральным аллеям города.',query:'Парки Тараз'},
+				{icon:'△',name:'Маршруты Каратау',text:'Пешеходные и автомобильные поездки к природным объектам региона.',query:'Каратау Жамбылская область'},
+				{icon:'♜',name:'Теннис и спорт',text:'Откройте спорткомплексы и площадки для активного отдыха.',query:'Спорткомплекс Тараз'},
+				{icon:'◇',name:'Семейный досуг',text:'Парки аттракционов, детские площадки и кафе для всей семьи.',query:'Развлечения для детей Тараз'}
+			]},
+			markets:{title:'Рынки и покупки',text:'Городские рынки подходят для знакомства с местными продуктами и ремесленными товарами.',items:[
+				{icon:'◫',name:'Ауыл-Береке',text:'Городской рынок с одеждой, обувью и товарами повседневного спроса.',query:'Ауыл-Береке Тараз'},
+				{icon:'●',name:'Центральный рынок',text:'Фрукты, овощи, специи, сухофрукты и местные продукты.',query:'Центральный рынок Тараз'},
+				{icon:'⌁',name:'Сухофрукты и орехи',text:'Популярный региональный выбор для гостей и угощения.',query:'Сухофрукты Тараз'},
+				{icon:'◆',name:'Местная выпечка',text:'Баурсаки, лепёшки и традиционные сладости в пекарнях города.',query:'Кондитерские Тараз'},
+				{icon:'✦',name:'Сувениры',text:'Изделия мастеров, украшения и памятные подарки.',query:'Сувениры Тараз'},
+				{icon:'☷',name:'Продуктовые лавки',text:'Молочная продукция, шубат, курт и сезонные продукты области.',query:'Молочные продукты Тараз'}
+			]},
+			history:{title:'История и культура',text:'Архитектура и музеи Тараза расскажут о многовековой истории Жамбыла.',items:[
+				{icon:'♜',name:'Айша-Биби',text:'Средневековый мавзолей с уникальной терракотовой отделкой.',query:'Мавзолей Айша-Биби'},
+				{icon:'◆',name:'Бабаджи-хатун',text:'Каменный мавзолей рядом с Айша-Биби.',query:'Мавзолей Бабаджи-хатун'},
+				{icon:'△',name:'Тектурмас',text:'Историко-культурный комплекс с видом на долину Таласа.',query:'Тектурмас Тараз'},
+				{icon:'▦',name:'Древний Тараз',text:'Музейно-археологический маршрут по основным памятникам города.',query:'Древний Тараз'},
+				{icon:'◉',name:'Мавзолей Карахана',text:'Один из известных средневековых памятников Тараза.',query:'Мавзолей Карахана'},
+				{icon:'◫',name:'Региональный музей',text:'Экспозиции истории, этнографии и природы Жамбылской области.',query:'Жамбылский областной музей Тараз'}
+			]},
+			nature:{title:'Природа и маршруты',text:'От горных склонов Каратау до зелёных долин — планируйте поездки с учётом сезона.',items:[
+				{icon:'△',name:'Каратау',text:'Горные панорамы, заповедные места и природные тропы.',query:'Каратау Жамбылская область'},
+				{icon:'≋',name:'Набережная Таласа',text:'Спокойная прогулка вдоль реки в Таразе.',query:'Набережная реки Талас Тараз'},
+				{icon:'⌁',name:'Меркенский район',text:'Горные виды и дороги в окрестностях Мерке.',query:'Мерке Жамбылская область'},
+				{icon:'◉',name:'Парк Победы',text:'Парковая зона Тараза для неспешной прогулки.',query:'Парк Победы Тараз'},
+				{icon:'□',name:'Пикник за городом',text:'Остановки у горных и степных маршрутов с предварительной проверкой дороги.',query:'Пикники Тараз Жамбылская область'},
+				{icon:'↗',name:'Фотомаршрут',text:'Индивидуальный маршрут по панорамам Тараза и окрестностей.',query:'Красивые места Тараз'}
+			]},
+			food:{title:'Вкус Жамбылской области',text:'Регион предлагает традиционные казахские блюда и продукты с местными особенностями.',items:[
+				{icon:'◉',name:'Бешбармак',text:'Традиционное угощение из мяса и тонко раскатанного теста.',query:'Бешбармак Тараз'},
+				{icon:'◆',name:'Баурсаки',text:'Свежая выпечка для прогулки или семейного чаепития.',query:'Баурсаки Тараз'},
+				{icon:'≈',name:'Кумыс и шубат',text:'Традиционные молочные напитки региона.',query:'Шубат Тараз'},
+				{icon:'◫',name:'Курт',text:'Сушёные солёные молочные шарики из местных продуктов.',query:'Курт Тараз'},
+				{icon:'♨',name:'Региональные кафе',text:'Домашняя и национальная кухня в заведениях города.',query:'Кафе национальной кухни Тараз'},
+				{icon:'✦',name:'Сладости к чаю',text:'Местная выпечка, восточные сладости и чайные программы.',query:'Кафе Тараз десерты'}
+			]},
+			tours:{title:'Готовые туры по области',text:'Выберите идею поездки, посмотрите остановки и откройте маршрут в Google Картах.',items:[
+				{icon:'♜',name:'Исторический Тараз',text:'Древний Тараз, мавзолей Карахана и комплекс Тектурмас.',stops:['Тараз','Древний Тараз','Мавзолей Карахана','Тектурмас Тараз']},
+				{icon:'◆',name:'Мавзолеи Айша-Биби',text:'Загородная поездка к двум памятникам средневекового зодчества.',stops:['Тараз','Мавзолей Айша-Биби','Мавзолей Бабаджи-хатун']},
+				{icon:'△',name:'Акыртас',text:'Поездка из Тараза к древнему каменному комплексу.',stops:['Тараз','Акыртас']},
+				{icon:'⌁',name:'Природа Мерке',text:'Маршрут к природным местам Меркенского района. Перед поездкой проверьте сезонный доступ и состояние дороги.',stops:['Тараз','Мерке Жамбылская область']},
+				{icon:'◈',name:'Каратау',text:'Поездка к горным ландшафтам области с остановками по пути.',stops:['Тараз','Каратау Жамбылская область']},
+				{icon:'◉',name:'Тараз за один день',text:'Сочетание прогулки по городу и посещения ближайших исторических мест.',stops:['Тараз','Древний Тараз','Тектурмас Тараз','Мавзолей Айша-Биби']}
+			]}
+		};
+		const panel=document.getElementById('category-panel');
+		function showCategory(key){const item=categories[key];panel.innerHTML=`<div class="activity-grid">${item.items.map(place=>{const url=place.stops?'https://www.google.com/maps/dir/'+place.stops.map(encodeURIComponent).join('/'):'https://maps.google.com/?q='+encodeURIComponent(place.query);const linkText=place.stops?'Открыть тур ↗':'Найти на карте ↗';return `<article class="activity-card"><span class="activity-icon" aria-hidden="true">${place.icon}</span><h3>${place.name}</h3><p>${place.text}</p><a href="${url}" target="_blank" rel="noopener">${linkText}</a></article>`}).join('')}</div>`}
+		document.querySelectorAll('.tab').forEach(button=>button.addEventListener('click',()=>{document.querySelector('.tab.active').classList.remove('active');document.querySelector('.tab[aria-selected="true"]').setAttribute('aria-selected','false');button.classList.add('active');button.setAttribute('aria-selected','true');showCategory(button.dataset.category)}));
+		showCategory('fun');
+		document.querySelectorAll('[data-open-category]').forEach(link=>link.addEventListener('click',()=>document.querySelector(`.tab[data-category="${link.dataset.openCategory}"]`).click()));
+	</script>
+</body>
+</html>
